@@ -1,11 +1,22 @@
 var smiley = [":)", ":)", ":D"];
-var rest = str.replace("smiley", "--");
-var btn = document.getElementsByClassName("btn") [0];
+var btn = document.getElementsByClassName("btn")[0];
 var result = document.getElementById("result");
+var textarea = document.getElementById("text");
+var i = 0;
 
-document.getElementById("text");
-div.innerHTML = "--";
 
-btn.addEventListener("click", function(){
-    result.value = "rest";
-});
+ for (i == smiley.length) {
+    if (textarea.value == smiley) {
+        console.log(smiley[i], "plop");
+    
+
+
+}
+i++;
+}
+
+
+
+// btn.addEventListener("click", function(){
+//     result.value = "rest";
+// });
