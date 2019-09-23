@@ -12,14 +12,15 @@
 var textarea = document.getElementById("text");
 var result = document.getElementById("result");
 var btn = document.getElementsByClassName("btn")[0];
-var smiley = [":)", ":)", ":D"];
+var smiley = [":')", ":)", ":D"];
 i = 0;
 
 btn.addEventListener("click", function(){
     var text = textarea.value;
     
-
-    text = text.replace(":)", "--")
+for (var i = 0; i < smiley.length ; i++) {
+    text = text.replace(smiley[i], "--")
+};
     
     // if (document.getElementById(text) == smiley[i]) {
     //     result.innerHTML == textarea.value.replace(smiley, "--");
@@ -29,6 +30,9 @@ btn.addEventListener("click", function(){
     result.innerHTML = text;
 
 });
+    // }
+    // i++;
+    // }
 
 
 
